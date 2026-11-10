@@ -2,6 +2,7 @@
 #include "CalcEmcClusShape.h"
 #include "INTT_Calo_trkUser.h"
 
+
 /*  Example 2
  *  plot clusters in nDST and filled histograms of them
  */
@@ -14,7 +15,7 @@ void INTT_Calo_trkUser_Init(void) {
    */
 
   h1zgvtx = new TH1F("h1zgvtx","global zvtx (cm)",100,-50.,50);
-  
+  std::cout<<"test" <<std::cout;
   h1nEmc  = new TH1F("h1nEmc","number of Emc clusters",100.,0.,100);
   h1Emc_r = new TH1F("h1Emc_r","Emc cluster r (cm)",100,90,110);
   h2Emc_eta_phi = new TH2F("h2Emc_eta_phi","(eta,phi) of Emc cluster",
